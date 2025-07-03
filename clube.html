@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Primavera clube</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+  <div class="container">
+    <div class="nav-left">
+      <a href="clube.html" class="logo">
+        <img src="logo.png" alt="Logo">
+      </a>
+    </div>
+    <div class="nav-center">
+      <ul class="menu">
+        <li><a href="esportes.html">Esportes</a></li>
+        <li><a href="esportes.html#seção2">Lazer</a></li>
+        <li><a href="#seção1">Sobre</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <a href="https://www.instagram.com/primaveraclubeoficialrb/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#telefone">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+      <a href="#maps">
+        <i class="fa-solid fa-location-dot"></i>
+      </a>
+    </div>
+  </div>
+</header>
+     <main>
+      <div>
+  <div class="carousel-frame">
+    <div class="slides">
+      <div class="carousel-slide">
+        <img src="img2/fundo1_optimized.webp" alt="Imagem 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="img2/fundo2_optimized.webp" alt="Imagem 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="img2/fundo3_optimized.webp" alt="Imagem 3">
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".carousel-slide");
+    const dots = document.querySelectorAll(".dot");
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? "block" : "none";
+        dots[i].classList.toggle("active", i === index);
+      });
+    }
+
+    function currentSlide(n) {
+      slideIndex = n;
+      showSlide(slideIndex);
+    }
+
+    function autoSlide() {
+      slideIndex = (slideIndex + 1) % slides.length;
+      showSlide(slideIndex);
+    }
+
+    
+    showSlide(slideIndex);
+    setInterval(autoSlide, 4000); 
+  </script>
+  </div>
+</main>
+      <footer>
+        <div class="fade-in">
+        <section id="seção1">
+            <div class="descrição">Sobre<span></span>
+        </div>    
+        <div class="texto">
+        <p>
+                 O Primavera Clube tem como principal 
+objetivo oferecer a toda a comunidade da região uma 
+experiência completa de lazer, bem-estar, prática esportiva 
+e integração social para pessoas de todas as idades. 
+Nosso compromisso é criar um ambiente acolhedor, 
+seguro e divertido, promovendo saúde, qualidade de vida 
+e convivência harmoniosa entre os associados. 
+Para tornar isso possível, disponibilizamos uma ampla 
+variedade de atividades e espaços planejados 
+especialmente para atender aos diferentes interesses dos 
+nossos sócios
+            </p>
+        <br>
+                Descubra o Clube Perfeito para Esporte e Lazer!
+
+Se você procura um lugar para cuidar da saúde, se divertir e fazer novas amizades, o nosso clube é o destino ideal! Aqui, unimos esporte, bem-estar e momentos de lazer para todas as idades, em um ambiente acolhedor e completo.
+
+        <br>🏐⚽🏀 Modalidades Esportivas para Todos os Gostos
+No nosso clube, você encontra as principais modalidades esportivas para praticar com qualidade e estrutura:
+
+Futebol: campos bem cuidados e turmas para diversas idades, do amador ao competitivo.
+
+Vôlei: quadras preparadas para jogos empolgantes entre amigos ou competições organizadas.
+
+Basquete: treinos e partidas em quadra oficial, com suporte técnico e campeonatos internos.
+
+Handebol: estrutura completa para jogos e treinamentos dessa modalidade dinâmica e envolvente.
+
+Tênis: quadras de saibro e piso rápido, com aulas para iniciantes e torneios para os apaixonados pelo esporte.
+
+Natação: piscinas aquecidas para prática livre ou aulas com profissionais qualificados, para todas as idades.
+        </br>
+💆‍♂️🎱🍻 Lazer e Bem-Estar em um Só Lugar
+Além do esporte, nosso clube é o espaço perfeito para relaxar e socializar:
+
+Sauna e Hidroginástica: cuide do seu corpo e mente com atividades que promovem saúde e relaxamento.
+
+Bar e Área de Convivência: espaços agradáveis para aproveitar um bom papo com os amigos ou familiares.
+
+Sinuca: para os que preferem desafios mais estratégicos, temos mesas de sinuca disponíveis em ambiente climatizado.
+
+        <br>🎯 Por que se tornar sócio?
+Ao se associar ao nosso clube, você garante acesso a uma infraestrutura de qualidade, equipe técnica especializada, eventos exclusivos e um ambiente seguro e familiar. É o lugar perfeito para sair da rotina, praticar esportes e viver experiências inesquecíveis.
+
+Venha fazer parte dessa comunidade!
+Esporte, lazer e bem-estar esperam por você aqui.
+    </br>
+        </br>
+            </div>
+        </section>
+        <section id="telefone">
+            <br><i class="fa-solid fa-phone"></i>Telefone: (16) 3344-1168  
+            </br>
+            <div id="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14790.519261601028!2d-48.19197994289958!3d-22.063751833303954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8843735336ec5%3A0xa43b95d9a0d3a922!2sSociedade%20de%20Nata%C3%A7%C3%A3o%20Primavera%20Clube!5e0!3m2!1spt-BR!2sbr!4v1751341127012!5m2!1spt-BR!2sbr" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </section>
+        <section>
+            <br>
+              <i class="fa-solid fa-location-dot"></i>  Endereço: R. Luís Blota, 126 - Ribeirão Bonito, SP, 13580-000
+        </br>
+        </section>
+        </div>
+      </footer>
+      
+
+    
+</body>
+</html>
