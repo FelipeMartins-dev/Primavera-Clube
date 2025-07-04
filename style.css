@@ -198,10 +198,6 @@ footer{
   content: "";
   color: white
 }
-@keyframes descrições {
-
-  
-}
 .titulo h1 {
   text-align: center;
   font-size: 48px;
@@ -212,8 +208,8 @@ footer{
 .esporte-card {
   display: flex;
   align-items: center;
-  background: #CDC200;
-  background: linear-gradient(90deg,rgb(7, 7, 7) 15%, rgb(223, 217, 29) 85%);
+  background: #010101;
+  background: linear-gradient(90deg,rgb(7, 7, 7) 10%, rgb(223, 217, 29) 85%);
   border-radius: 15px;
   padding: 20px;
   gap: 20px;
@@ -245,7 +241,7 @@ footer{
 
 .esporte-info p {
   font-size: 18px;
-  color: #cfee09;
+  color: #000000;
 }
 
 
