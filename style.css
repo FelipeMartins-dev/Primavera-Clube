@@ -179,6 +179,7 @@ footer{
   font-size: 55px;
   padding: 40px;
   text-align: center;
+  color:white
 }
 .texto{
   font-size: 25px;
@@ -187,6 +188,7 @@ footer{
   max-width: 1000px;
   height: auto;
   margin: 0px auto;
+  color: white
 }
 .descrição span{
   position: relative;
@@ -194,7 +196,7 @@ footer{
 }
 .descrição span::before{
   content: "";
-  color: #020024;
+  color: #ffffff;
 }
 @keyframes descrições {
 
