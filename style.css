@@ -196,7 +196,7 @@ footer{
 }
 .descrição span::before{
   content: "";
-  color: #ffffff;
+  color: white
 }
 @keyframes descrições {
 
