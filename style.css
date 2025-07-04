@@ -208,7 +208,7 @@ footer{
 .esporte-card {
   display: flex;
   align-items: center;
-  background: #010101;
+  background: #ffffff;
   background: linear-gradient(90deg,rgb(7, 7, 7) 10%, rgb(223, 217, 29) 85%);
   border-radius: 15px;
   padding: 20px;
@@ -216,7 +216,7 @@ footer{
   margin: 20px auto;
   width: 90%;
   max-width: 900px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 12px rgb(255, 255, 255);
   transition: transform 0.3s;
 }
 
@@ -241,7 +241,7 @@ footer{
 
 .esporte-info p {
   font-size: 18px;
-  color: #000000;
+  color: #ffffff;
 }
 
 
@@ -322,8 +322,10 @@ footer h1 {
     flex-direction: column;
     text-align: center;
   }
-
   h1, h2, p {
     font-size: 1rem;
   }
+}
+.final{
+  color:white 
 }
